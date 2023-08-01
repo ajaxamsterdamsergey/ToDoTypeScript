@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo App</title>
+  <link rel="icon" type="image/x-icon" href="icons8-favicon-16.ico">
+  <link rel="stylesheet" href="src/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <img src="src/images/Logo.svg" alt="Logo">
+    </div>
+    <nav class="header__navigation">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+      <a href="#">Link 4</a>
+      <a href="#">Link 5</a>
+      <a href="#">Link 6</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="main__new-todo__container">
+    <div class="main__new-todo">
+        <div class="input-field">
+    <input type="text" id="todo-name" class="input" required>
+    <label for="todo-name" class="label">Name</label>
+        </div>
+    <div class="input-field">
+    <select id="todo-priority" class="input" required>
+        <option value="" disabled selected></option>
+        <option value="1">High Priority</option>
+        <option value="2">Medium Priority</option>
+        <option value="3">Low Priority</option>
+    </select>
+    <label for="todo-priority" class="label">Priority</label>
+   </div>
+    <div class="input-field">
+    <textarea id="todo-description" class="input" required></textarea>
+    <label for="todo-description" class="label">ToDo Description</label>
+    </div>
+
+        <button id="add-todo">Add ToDo</button>
+    </div>
+  </div>
+    <div class="main__todos">
+      <div id="planned">
+        <h2 class="status-title">Planned</h2>
+        <div id="planned-todos"></div>
+      </div>
+      
+      <div id="in-progress">
+        <h2 class="status-title">In Progress</h2>
+        <div id="in-progress-todos"></div>
+      </div>
+      
+      <div id="done">
+        <h2 class="status-title">Done</h2>
+        <div id="done-todos"></div>
+      </div>
+      
+    </div>
+</main>
+
+
+  <footer class="footer">
+    <nav class="footer__navigation">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+      <a href="#">Link 4</a>
+      <a href="#">Link 5</a>
+      <a href="#">Link 6</a>
+    </nav>
+    <div class="footer__logo">
+      <img src="src/images/Logo.svg" alt="Logo">
+    </div>
+  </footer>
+
+  <script src="dist/app.js"></script>
+</body>
+
+</html>
